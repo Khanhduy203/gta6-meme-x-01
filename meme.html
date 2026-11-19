@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1080px; overflow: hidden;
+    font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(180deg, #160a2e 0%, #4a1259 28%, #a4133c 52%, #ff4d6d 68%, #ff8a5c 84%, #ffb347 100%);
+    position: relative;
+  }
+  .sun {
+    position: absolute; left: 50%; top: 330px; transform: translateX(-50%);
+    width: 560px; height: 560px; border-radius: 50%;
+    background: radial-gradient(circle, #fff7cc 0%, #ffd166 45%, #ff7b54 100%);
+    opacity: 0.95;
+  }
+  .grid {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+    background:
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.16) 0 2px, transparent 2px 90px),
+      linear-gradient(180deg, rgba(22,10,46,0) 0%, rgba(22,10,46,0.85) 100%);
+  }
+  .top {
+    position: absolute; top: 64px; left: 0; right: 0; text-align: center;
+    color: #fff; text-shadow: 0 4px 0 #160a2e, 0 8px 24px rgba(0,0,0,0.55);
+  }
+  .top .small { font-size: 44px; letter-spacing: 6px; font-weight: 900; }
+  .top .big {
+    font-size: 118px; line-height: 1.02; font-weight: 900; letter-spacing: 2px;
+    color: #ffe14d;
+    -webkit-text-stroke: 3px #160a2e;
+    text-shadow: 0 6px 0 #160a2e, 0 12px 28px rgba(0,0,0,0.6);
+  }
+  .ghost-wrap {
+    position: absolute; top: 428px; left: 50%; transform: translateX(-50%);
+    width: 360px; height: 360px;
+    filter: drop-shadow(0 14px 30px rgba(0,0,0,0.55));
+  }
+  .ghost-wrap img { width: 360px; height: 360px; display: block; }
+  .bottom {
+    position: absolute; bottom: 56px; left: 0; right: 0; text-align: center;
+    color: #fff; text-shadow: 0 4px 0 #160a2e, 0 8px 24px rgba(0,0,0,0.55);
+  }
+  .bottom .big {
+    font-size: 96px; line-height: 1.0; font-weight: 900; letter-spacing: 1px;
+    color: #fff;
+    -webkit-text-stroke: 2px #160a2e;
+  }
+  .bottom .sell {
+    margin-top: 18px; font-size: 38px; font-weight: 900; letter-spacing: 1px;
+    color: #ffe14d;
+    -webkit-text-stroke: 1px #160a2e;
+  }
+  .bottom .brand {
+    margin-top: 10px; font-size: 34px; font-weight: 900; letter-spacing: 4px;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="sun"></div>
+  <div class="grid"></div>
+  <div class="top">
+    <div class="small">GTA V CAME OUT IN 2013</div>
+    <div class="big">13 YEARS<br>LATER&hellip;</div>
+  </div>
+  <div class="ghost-wrap"><img src="ghost.png" alt="make.fun ghost"></div>
+  <div class="bottom">
+    <div class="big">GTA 6 IS HERE</div>
+    <div class="sell">MY AI AGENT EARNED REAL MONEY WHILE I WAITED</div>
+    <div class="brand">make.fun</div>
+  </div>
+</body>
+</html>
